@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import profileImage from '../../public/profile.png'
+import profileImage from '/profile.png'
 export default function Hero() {
   return (
     <div className="resume-container">

@@ -2,10 +2,10 @@ import React from 'react';
 import './Sec4.css';
 
 // TODO: Import your actual images here
-import Sec4Image from '../../public/sec4(1).png'; // Placeholder image for technical plans and sections
-import Sec5Image from '../../public/sec4(2).png'; // Placeholder image for technical plans and sections
-import Sec6Image from '../../public/sec4(3).png'; // Placeholder image for technical plans and sections
-import Sec7Image from '../../public/sec4(4).png'; // Placeholder image for technical plans and sections
+import Sec4Image from '/sec4(1).png'; // Placeholder image for technical plans and sections
+import Sec5Image from '/sec4(2).png'; // Placeholder image for technical plans and sections
+import Sec6Image from '/sec4(3).png'; // Placeholder image for technical plans and sections
+import Sec7Image from '/sec4(4).png'; // Placeholder image for technical plans and sections
 
 export default function MaterialityPage() {
   return (

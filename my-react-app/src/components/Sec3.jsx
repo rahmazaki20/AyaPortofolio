@@ -1,6 +1,6 @@
 import React from 'react'
-import Sec3Image from '../../public/sec3(1).png'; // Placeholder image for technical plans and sections
-import Sec4Image from '../../public/sec3(2).png';
+import Sec3Image from '/sec3(1).png'; // Placeholder image for technical plans and sections
+import Sec4Image from '/sec3(2).png';
 import './Sec3.css';
 export default function Sec3() {
   return (

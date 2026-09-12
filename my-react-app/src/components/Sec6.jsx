@@ -2,12 +2,12 @@ import React from 'react';
 import './Sec6.css';
 
 // TODO: Import your actual images here
-import interiorImg1 from '../../public/sec6(1).png';
-import interiorImg2 from '../../public/sec6(2).png';
-import interiorImg3 from '../../public/sec6(3).png';
-import interiorImg4 from '../../public/sec6(4).png';
-import interiorImg5 from '../../public/sec6(5).png';
-import interiorHero from '../../public/sec6(6).png';
+import interiorImg1 from '/sec6(1).png';
+import interiorImg2 from '/sec6(2).png';
+import interiorImg3 from '/sec6(3).png';
+import interiorImg4 from '/sec6(4).png';
+import interiorImg5 from '/sec6(5).png';
+import interiorHero from '/sec6(6).png';
 
 export default function Sec6() {
   return (
