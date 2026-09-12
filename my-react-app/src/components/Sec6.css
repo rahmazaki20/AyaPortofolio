@@ -1,0 +1,148 @@
+
+
+/* --- Page Setup --- */
+.interiors-page-container {
+  /* max-width: 1400px;
+  margin: 0 auto; */
+  padding: 25px;
+  /* background-color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000; */
+  /* box-sizing: border-box; */
+}
+
+/* --- Header --- */
+.interiors-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 60px;
+  letter-spacing: 0.5px;
+}
+
+/* --- Main Layout Grid (Splits the page in half) --- */
+.interiors-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Equal 50/50 split */
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* --- Left Column Specifics --- */
+.interiors-col-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.interiors-title-block {
+  margin-bottom: 40px;
+}
+
+.interiors-main-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  color: #000;
+  text-align: left;
+}
+
+.interiors-meta-list {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.interiors-meta-list span {
+  display: inline-block;
+  width: 55px; /* Aligns the colons */
+}
+
+/* --- Right Column Specifics --- */
+.interiors-col-right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 65px; /* Pushes right column down to align with left content */
+}
+
+/* --- Shared Row Layout (Image + Text side-by-side) --- */
+.interior-row {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Image Container (Left side of row) */
+.interior-img-container {
+  width: 45%; /* Takes up 45% of the row */
+  flex-shrink: 0;
+}
+
+.interior-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Text Container (Right side of row) */
+.interior-text-container {
+  width: 55%; /* Takes up remaining space */
+  display: flex;
+  align-items: flex-start; /* Aligns text to the top */
+}
+
+.interior-text-container p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
+  text-align: left;
+}
+
+/* --- Special Layout: Full-Width Top Image on Right Column --- */
+.interior-full-img-container {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.interior-full-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* --- Footer --- */
+.interiors-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333;
+  padding-top: 20px;
+}
+
+/* --- Responsive (Mobile & Tablet) --- */
+@media (max-width: 1024px) {
+  .interiors-main-grid {
+    grid-template-columns: 1fr; /* Stack columns vertically */
+    gap: 50px;
+  }
+
+  .interiors-col-right {
+    padding-top: 0; /* Remove alignment push on mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .interior-row {
+    flex-direction: column; /* Stack image and text vertically within rows */
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+
+  .interior-img-container,
+  .interior-text-container {
+    width: 100%; /* Full width for both image and text */
+  }
+}

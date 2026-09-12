@@ -1,0 +1,184 @@
+/* ExteriorRenders.css */
+
+/* --- Page Setup --- */
+.render-page-container {
+  /* max-width: 1400px; */
+  /* margin: 0 auto; */
+  padding: 25px;
+  /* background-color: #ffffff; */
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  /* color: #000; */
+  /* box-sizing: border-box; */
+}
+
+/* --- Header --- */
+.render-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 60px;
+  letter-spacing: 0.5px;
+}
+
+/* --- Section Titles --- */
+.render-titles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 30px;
+  justify-items: start; /* Aligns grid items to the start (left) of their cells */
+}
+
+.render-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  color: #000;
+}
+
+/* --- Main 2-Column Layout --- */
+.render-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* Left side slightly wider to match visual weight */
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* =========================================
+   LEFT COLUMN: Render Grid
+   ========================================= */
+.render-col-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.render-left-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns for the images */
+  gap: 20px;
+}
+
+/* Common Image Styles */
+.render-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Top Left Image */
+.top-left-img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+/* Top Right Image */
+.top-right-img {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+/* Captions under top images */
+.caption-top-left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  margin-top: 10px;
+}
+
+.caption-top-right {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Bottom Left Image (taller) */
+.bottom-left-img-container {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  margin-top: 20px;
+}
+
+/* Bottom Right Text (aligned with the bottom image) */
+.bottom-right-text {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-top: 60px; /* Pushes text down to align with middle of image */
+  padding-right: 20px;
+}
+
+/* =========================================
+   RIGHT COLUMN: Large 3D View
+   ========================================= */
+.render-col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px; /* Slight alignment tweak */
+}
+
+.section-img-container {
+  width: 100%;
+}
+
+.section-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* --- Footer --- */
+.render-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333;
+  padding-top: 20px;
+}
+
+/* --- Responsive (Mobile & Tablet) --- */
+@media (max-width: 1024px) {
+  .render-grid {
+    grid-template-columns: 1fr; /* Stack right column under left column */
+    gap: 60px;
+  }
+  
+  .render-titles-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .render-left-grid {
+    grid-template-columns: 1fr; /* Stack all left images into one column */
+    gap: 30px;
+  }
+
+  /* Reset grid positions for mobile */
+  .top-left-img,
+  .top-right-img,
+  .caption-top-left,
+  .caption-top-right,
+  .bottom-left-img-container,
+  .bottom-right-text {
+    grid-column: 1 / -1; /* Span full width */
+    grid-row: auto;      /* Let grid auto-place */
+    margin-top: 10px;
+  }
+
+  .bottom-right-text {
+    margin-top: 10px; /* Reset alignment nudge for mobile */
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,108 @@
+/* MaterialityPage.css */
+
+/* --- Page Setup --- */
+.mat-page-container {
+  /* max-width: 1400px; */
+  margin: 0 auto;
+  padding: 25px;
+  /* background-color: #ffffff; */
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  /* color: #000; */
+  /* box-sizing: border-box; */
+}
+
+/* --- Header --- */
+.mat-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 60px;
+  letter-spacing: 0.5px;
+}
+
+/* --- Main Title --- */
+.mat-main-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 4px 0;
+  color: #000;
+}
+
+.mat-subtitle {
+  font-size: 12px;
+  color: #555;
+  margin: 0 0 40px 0;
+  font-weight: 400;
+}
+
+/* --- 2-Column Layout --- */
+.mat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Equal 50/50 split */
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+/* --- LEFT COLUMN: Diagrams --- */
+.mat-col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Space between stacked diagrams */
+}
+
+/* Individual Diagram Block */
+.mat-diagram-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Space between image and its caption */
+}
+
+.mat-diagram-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.mat-caption {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666;
+  margin: 0;
+}
+
+/* --- RIGHT COLUMN: Main Render --- */
+.mat-col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mat-render-container {
+  width: 100%;
+}
+
+.mat-render-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* --- Footer --- */
+.mat-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333;
+  padding-top: 20px;
+}
+
+/* --- Responsive (Mobile) --- */
+@media (max-width: 900px) {
+  .mat-grid {
+    grid-template-columns: 1fr; /* Stack vertically on small screens */
+    gap: 50px;
+  }
+}

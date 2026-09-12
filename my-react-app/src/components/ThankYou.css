@@ -1,0 +1,20 @@
+/* "Thank You!" Text */
+.thanks-title {
+  color: #000000;
+  font-size: 3rem; /* 48px */
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+/* --- Responsive Adjustments --- */
+@media (min-width: 640px) {
+  .thanks-white-card {
+    padding: 3rem;
+  }
+
+  .thanks-title {
+    font-size: 4rem; /* 64px - larger on desktop to match screenshot impact */
+  }
+}
