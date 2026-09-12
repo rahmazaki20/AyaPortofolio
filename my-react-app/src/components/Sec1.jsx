@@ -1,8 +1,8 @@
 import React from 'react'
 import './Sec1.css'
-import axonometricImage from '../assets/sec1(1).png'
-import mapImage from '../assets/sec1(2).png'
-import elevationImage from '../assets/sec1(3).png'
+import axonometricImage from '../../public/sec1(1).png'
+import mapImage from '../../public/sec1(2).png'
+import elevationImage from '../../public/sec1(3).png'
 export default function Sec1() {
     const handlePrint = () => {
         window.print()

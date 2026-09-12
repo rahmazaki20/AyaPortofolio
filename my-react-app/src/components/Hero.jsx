@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import profileImage from '../assets/profile.png'
+import profileImage from '../../public/profile.png'
 export default function Hero() {
   return (
     <div className="resume-container">
@@ -111,7 +111,7 @@ export default function Hero() {
         <section style={{ marginTop: '30px' }}>
           <h2>Contact Information</h2>
           <p style={{ margin: '2px 0' }}>+201066509371</p>
-          <p>aya297.zaki@gmail.com</p>
+          <p>aya297zaki@gmail.com</p>
         </section>
       </div>
     </div>

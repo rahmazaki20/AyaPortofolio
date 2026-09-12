@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sec2.css';
-import Sec2Image from '../assets/sec2(1).png'; // Placeholder image for technical plans and sections
-import Sec3Image from '../assets/sec2(2).png';
+import Sec2Image from '../../public/sec2(1).png'; // Placeholder image for technical plans and sections
+import Sec3Image from '../../public/sec2(2).png';
 // TODO: Import your actual images here
 // import sectionsImage from '../assets/sections.png';
 // import floorPlansImage from '../assets/floor-plans.png';

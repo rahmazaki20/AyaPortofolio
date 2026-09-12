@@ -6,10 +6,10 @@ import './Sec5.css';
 // import render2 from '../assets/render-2.png';
 // import render3 from '../assets/render-3.png';
 // import section3D from '../assets/section-3d.png';
-import render1 from '../assets/sec5(1).png';
-import render2 from '../assets/sec5(2).png';
-import render3 from '../assets/sec5(3).png';
-import section3D from '../assets/sec5(4).png';
+import render1 from '../../public/sec5(1).png';
+import render2 from '../../public/sec5(2).png';
+import render3 from '../../public/sec5(3).png';
+import section3D from '../../public/sec5(4).png';
 export default function Sec5() {
   return (
     <div className="render-page-container">
